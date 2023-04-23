@@ -116,7 +116,7 @@ game.StarterGui:SetCore("SendNotification", {
 
 
 
-_G.WS = "30w";
+_G.WS = "30";
 				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
 				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
 				Humanoid.WalkSpeed = _G.WS;
