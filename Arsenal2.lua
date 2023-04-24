@@ -7,6 +7,7 @@ local Decoration = Instance.new("Frame")
 local Header = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
 local Dawido2137 = Instance.new("TextButton")
+local infjump = Instance.new("TextButton")
 local xButton = Instance.new("TextButton")
 local OpenFrame = Instance.new("Frame")
 local Open = Instance.new("TextButton")
@@ -72,7 +73,16 @@ Dawido2137.TextColor3 = Color3.new(0.333333, 1, 1)
 Dawido2137.TextSize = 14
  
 
-
+Wings.Name = "infjump"
+Wings.Parent = MainFrame
+Wings.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Wings.BorderSizePixel = 0
+Wings.Position = UDim2.new(0.553191483, 0, 0.180921048, 0)
+Wings.Size = UDim2.new(0, 229, 0, 50)
+Wings.Font = Enum.Font.SciFi
+Wings.Text = "infjump"
+Wings.TextColor3 = Color3.new(0.333333, 1, 1)
+Wings.TextSize = 14
  
 
 
@@ -111,7 +121,9 @@ Dawido2137.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua'),true))()
 end)
  
- 
+infjump.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal3.lua'),true))()
+end)
  
  
 -- Open/Close
