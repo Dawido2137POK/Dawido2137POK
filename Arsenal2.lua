@@ -122,7 +122,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido
 end)
  
 Wings.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"),true))()
 end)
  
  
