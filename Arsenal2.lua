@@ -73,14 +73,14 @@ Dawido2137.TextColor3 = Color3.new(0.333333, 1, 1)
 Dawido2137.TextSize = 14
  
 
-Wings.Name = "infjump"
+Wings.Name = "owlhub"
 Wings.Parent = MainFrame
 Wings.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
 Wings.BorderSizePixel = 0
 Wings.Position = UDim2.new(0.553191483, 0, 0.180921048, 0)
 Wings.Size = UDim2.new(0, 229, 0, 50)
 Wings.Font = Enum.Font.SciFi
-Wings.Text = "infjump"
+Wings.Text = "owlhub"
 Wings.TextColor3 = Color3.new(0.333333, 1, 1)
 Wings.TextSize = 14
  
@@ -122,7 +122,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido
 end)
  
 Wings.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(('https://pastebin.com/9Pbf0K3f'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'),true))()
 end)
  
  
