@@ -8,6 +8,7 @@ local Header = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
 local Dawido2137 = Instance.new("TextButton")
 local Wings = Instance.new("TextButton")
+local Goku = Instance.new("TextButton")
 local xButton = Instance.new("TextButton")
 local OpenFrame = Instance.new("Frame")
 local Open = Instance.new("TextButton")
@@ -84,7 +85,16 @@ Wings.Text = "owlhub"
 Wings.TextColor3 = Color3.new(0.333333, 1, 1)
 Wings.TextSize = 14
  
-
+Goku.Name = "infjump"
+Goku.Parent = MainFrame
+Goku.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Goku.BorderSizePixel = 0
+Goku.Position = UDim2.new(0.0283687934, 0, 0.417763174, 0)
+Goku.Size = UDim2.new(0, 229, 0, 50)
+Goku.Font = Enum.Font.SciFi
+Goku.Text = "infjump"
+Goku.TextColor3 = Color3.new(0.333333, 1, 1)
+Goku.TextSize = 14
 
  
 xButton.Name = "xButton"
@@ -118,13 +128,16 @@ Open.TextSize = 14
 -- Scripts 
  
 Dawido2137.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua'),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua"),true))()
 end)
  
 Wings.MouseButton1Down:connect(function() 
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"),true))()
 end)
  
+Goku.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet(("https://pastebin.com/HQsQysa8"),true))()
+end)
  
 -- Open/Close
 xButton.MouseButton1Down:connect(function()
