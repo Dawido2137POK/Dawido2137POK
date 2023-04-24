@@ -85,14 +85,14 @@ Wings.Text = "owlhub"
 Wings.TextColor3 = Color3.new(0.333333, 1, 1)
 Wings.TextSize = 14
  
-Goku.Name = "infjump"
+Goku.Name = "darkhub"
 Goku.Parent = MainFrame
 Goku.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
 Goku.BorderSizePixel = 0
 Goku.Position = UDim2.new(0.0283687934, 0, 0.417763174, 0)
 Goku.Size = UDim2.new(0, 229, 0, 50)
 Goku.Font = Enum.Font.SciFi
-Goku.Text = "infjump"
+Goku.Text = "darkhub"
 Goku.TextColor3 = Color3.new(0.333333, 1, 1)
 Goku.TextSize = 14
 
@@ -128,7 +128,7 @@ Open.TextSize = 14
 -- Scripts 
  
 Dawido2137.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua"),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua'),true))()
 end)
  
 Wings.MouseButton1Down:connect(function() 
@@ -136,7 +136,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/mast
 end)
  
 Goku.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(("https://pastebin.com/HQsQysa8"),true))()
+loadstring(game:HttpGet(("ttps://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init",true))()
 end)
  
 -- Open/Close
