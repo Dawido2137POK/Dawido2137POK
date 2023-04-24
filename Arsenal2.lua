@@ -122,7 +122,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido
 end)
  
 infjump.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal3.lua'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/3ceHVPL1'),true))()
 end)
  
  
