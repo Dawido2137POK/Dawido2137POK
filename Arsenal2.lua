@@ -130,7 +130,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/mast
 end)
 
 Goku.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(("https://pastebin.com/HQsQysa8"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal3.lua"),true))()
 end)
 
 xButton.MouseButton1Down:connect(function()
