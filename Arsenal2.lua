@@ -7,7 +7,6 @@ local Decoration = Instance.new("Frame")
 local Header = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
 local Dawido2137 = Instance.new("TextButton")
-local Dawido2137infjump = Instance.new("TextButton")
 local xButton = Instance.new("TextButton")
 local OpenFrame = Instance.new("Frame")
 local Open = Instance.new("TextButton")
@@ -73,17 +72,7 @@ Dawido2137.TextColor3 = Color3.new(0.333333, 1, 1)
 Dawido2137.TextSize = 14
  
 
-Dawido2137infjump.Name = "Dawido2137-INFJUMP"
-Dawido2137infjump.Parent = MainFrame
-Dawido2137infjump.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
-Dawido2137infjump.BorderSizePixel = 0
-Dawido2137infjump.Position = UDim2.new(0.553191483, 0, 0.180921048, 0)
-Dawido2137infjump.Size = UDim2.new(0, 229, 0, 50)
-Dawido2137infjump.Font = Enum.Font.SciFi
-Dawido2137infjump.Text = "Dawido2137-INFJUMP"
-Dawido2137infjump.TextColor3 = Color3.new(Color3.new(0.333333, 1, 1)
-Dawido2137infjump.TextSize = 14
- 
+
  
 
 
@@ -124,9 +113,6 @@ end)
  
  
  
-Dawido2137infjump.MouseButton1Down:connect(function() 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal3.lua'),true))()
-end)
  
 -- Open/Close
 xButton.MouseButton1Down:connect(function()
