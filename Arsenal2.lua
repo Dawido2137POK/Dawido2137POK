@@ -121,7 +121,7 @@ Dawido2137.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua'),true))()
 end)
  
-infjump.MouseButton1Down:connect(function() 
+Wings.MouseButton1Down:connect(function() 
 loadstring(game:HttpGet(('https://pastebin.com/3ceHVPL1'),true))()
 end)
  
