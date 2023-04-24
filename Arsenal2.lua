@@ -81,14 +81,14 @@ Wings.Text = "owlhub"
 Wings.TextColor3 = Color3.new(0.333333, 1, 1)
 Wings.TextSize = 14
 
-Goku.Name = "infjump r"
+Goku.Name = "infjump"
 Goku.Parent = MainFrame
 Goku.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
 Goku.BorderSizePixel = 0
 Goku.Position = UDim2.new(0.0283687934, 0, 0.417763174, 0)
 Goku.Size = UDim2.new(0, 229, 0, 50)
 Goku.Font = Enum.Font.SciFi
-Goku.Text = "infjump r"
+Goku.Text = "infjump"
 Goku.TextColor3 = Color3.new(0.333333, 1, 1)
 Goku.TextSize = 14
 
