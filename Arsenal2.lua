@@ -73,14 +73,14 @@ Dawido2137.TextColor3 = Color3.new(0.333333, 1, 1)
 Dawido2137.TextSize = 14
  
 
-Wings.Name = "infjump"
+Wings.Name = "infjump prees e"
 Wings.Parent = MainFrame
 Wings.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
 Wings.BorderSizePixel = 0
 Wings.Position = UDim2.new(0.553191483, 0, 0.180921048, 0)
 Wings.Size = UDim2.new(0, 229, 0, 50)
 Wings.Font = Enum.Font.SciFi
-Wings.Text = "infjump"
+Wings.Text = "infjump prees e"
 Wings.TextColor3 = Color3.new(0.333333, 1, 1)
 Wings.TextSize = 14
  
