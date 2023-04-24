@@ -1,5 +1,4 @@
- -- Objects
- 
+
 local GameScriptGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Tittle = Instance.new("Frame")
