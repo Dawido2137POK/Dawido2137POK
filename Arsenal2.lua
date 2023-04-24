@@ -1,4 +1,3 @@
-
 local GameScriptGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Tittle = Instance.new("Frame")
@@ -142,3 +141,4 @@ OpenFrame.Visible = false
 MainFrame.Visible = true
 MainFrame:TweenPosition(UDim2.new(0.384,0,0.377,0), 'Out', 'Elastic', 3)
 end)
+
