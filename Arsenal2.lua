@@ -82,6 +82,17 @@ Wings.Text = "owlhub"
 Wings.TextColor3 = Color3.new(0.333333, 1, 1)
 Wings.TextSize = 14
 
+Goku.Name = "infjump r"
+Goku.Parent = MainFrame
+Goku.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Goku.BorderSizePixel = 0
+Goku.Position = UDim2.new(0.0283687934, 0, 0.417763174, 0)
+Goku.Size = UDim2.new(0, 229, 0, 50)
+Goku.Font = Enum.Font.SciFi
+Goku.Text = "infjump r"
+Goku.TextColor3 = Color3.new(0.333333, 1, 1)
+Goku.TextSize = 14
+
 xButton.Name = "xButton"
 xButton.Parent = MainFrame
 xButton.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
@@ -116,6 +127,10 @@ end)
 
 Wings.MouseButton1Down:connect(function() 
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"),true))()
+end)
+
+Goku.MouseButton1Down:connect(function() 
+loadstring(game:HttpGet(("https://pastebin.com/HQsQysa8"),true))()
 end)
 
 xButton.MouseButton1Down:connect(function()
