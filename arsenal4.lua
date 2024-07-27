@@ -4,4 +4,4 @@ local Window = Library.CreateLib("Dawido2137POK", "DarkTheme")
 
 --ARSENAL
 local arsenal = Window:NewTab("Arsenal")
-local arsenalSection = Tab:NewSection("Owlhub")
+local arsenalSection = Tab:arsenalSection("Owlhub")
