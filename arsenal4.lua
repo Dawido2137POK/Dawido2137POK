@@ -41,7 +41,7 @@ end)
 
 --INFO
 local infor = Window:NewTab("Info")
-local infoSection = infor:NewSection("Info")
+local infoSection = infor:NewSection("--------")
 
 
 infoSection:NewLabel("Created by xDawidx")
