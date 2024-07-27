@@ -61,6 +61,11 @@ jailSection:NewButton("Project Auto V4", "Execute the Project Auto script", func
 end)
 
 
+
+jailSection:NewButton("Chaos", "Execute the chaos script", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/xChaoticVoid/Jailbreak/main/Chaos.lua'), true))()
+end)
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
