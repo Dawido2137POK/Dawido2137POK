@@ -24,6 +24,11 @@ end)
 
 
 
+arsenalSection:NewButton("Arsenal X", "Execute Arsenal X script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/helldevelopment/RobloxScripts/main/SanityLoader.lua"))()
+end)
+
+
 --BladeBall
 local blade = Window:NewTab("BladeBall")
 local bladeSection = blade:NewSection("Scripts")
