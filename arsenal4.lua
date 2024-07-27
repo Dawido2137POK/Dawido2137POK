@@ -4,8 +4,8 @@ local Window = Library.CreateLib("Dawido2137POK", "DarkTheme")
 
 --ARSENAL
 local arse = Window:NewTab("Arsenal")
-local owlSection = arse:NewSection("Owlhub")
+local arseSection = arse:NewSection("Owlhub")
 
-owlSection:NewButton("OwlHub", "Execute the owlhub script", function()
+arseSection:NewButton("OwlHub", "Execute the owlhub script", function()
     print("Clicked")
 end)
