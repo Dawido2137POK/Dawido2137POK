@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/esp.lua"),true))()
+
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "INJECTED!";
