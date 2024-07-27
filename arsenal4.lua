@@ -10,7 +10,7 @@ allSection:NewButton("OwlHub", "Execute the owlhub script", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"),true))()
 end)
 
-allSection:NewToggle("ToggleText", "ToggleInfo", function(state)
+allSection:NewToggle("Extra Speed", "Give a SPEED", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
     else
