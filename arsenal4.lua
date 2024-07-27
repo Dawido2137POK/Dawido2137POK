@@ -17,6 +17,11 @@ arsenalSection:NewButton("My Script", "Execute my script", function()
 end)
 
 
+
+arsenalSection:NewButton("Solaris", "Execute Solaris script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/toasty-dev/pissblox/main/solaris_bootstrapper.lua",true))()
+end)
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
