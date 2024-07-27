@@ -38,10 +38,6 @@ bladeSection:NewButton("FFJ1 BladeBallV2", "Execute the FFJ1 script", function()
 end)
 
 
-
-
-
-
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
