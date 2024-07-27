@@ -39,9 +39,10 @@ universalskSection:NewButton("Dex Explorer", "Execute the Dex Explorer script", 
 end)
 
 
+--INFO
+local infor = Window:NewTab("Info")
+local infoSection = infor:NewSection("Info")
 
-local universalinfoSection = universals:NewSection("Info")
 
-
-universalinfoSection:NewLabel("Created by xDawidx")
+infoSection:NewLabel("Created by xDawidx")
 
