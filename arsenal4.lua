@@ -62,3 +62,15 @@ infoSection:NewLabel("Created by xDawidx")
 
 
 infoSection:NewLabel("------------------------------------------------")
+
+
+--UI
+local UI = Window:NewTab("UI")
+local UISection = UI:NewSection("TOGGLE UI")
+
+
+
+UISection:NewKeybind("KEY", "set a key to toggle UI", Enum.KeyCode.L, function()
+	Library:ToggleUI()
+end)
+
