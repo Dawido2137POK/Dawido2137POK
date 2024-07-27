@@ -38,6 +38,15 @@ bladeSection:NewButton("FFJ1 BladeBallV2", "Execute the FFJ1 script", function()
 end)
 
 
+--Doors
+local doors = Window:NewTab("Doors")
+local doorsSection = blade:NewSection("Scripts")
+
+doorsSection:NewButton("FFJ1 Doors", "Execute the FFJ1 script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+end)
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
