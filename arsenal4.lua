@@ -12,6 +12,11 @@ end)
 
 
 
+arsenalSection:NewButton("My Script", "Execute my script", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua'),true))()
+end)
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
@@ -38,6 +43,11 @@ universalskSection:NewButton("Dex Explorer", "Execute the Dex Explorer script", 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/dex.lua'))()
 end)
 
+
+
+universalskSection:NewButton("Infinite Jump", "Execute the Infinite Jump", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal3.lua"),true))()
+end)
 
 --INFO
 local infor = Window:NewTab("Info")
