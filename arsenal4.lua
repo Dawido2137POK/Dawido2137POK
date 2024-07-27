@@ -26,7 +26,7 @@ end)
 
 --BladeBall
 local blade = Window:NewTab("BladeBall")
-local bladeSection = arse:NewSection("Scripts")
+local bladeSection = blade:NewSection("Scripts")
 
 bladeSection:NewButton("FFJ1 BladeBallV3", "Execute the FFJ1 script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
