@@ -12,6 +12,9 @@ end)
 
 
 
+1
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
@@ -37,3 +40,13 @@ end)
 universalskSection:NewButton("Dex Explorer", "Execute the Dex Explorer script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/dex.lua'))()
 end)
+
+
+
+local universalinfoSection = universals:NewSection("Info")
+
+
+universalinfoSection:NewTextBox("TextboxText", "TextboxInfo", function(txt)
+	print(txt)
+end)
+
