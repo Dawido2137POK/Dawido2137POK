@@ -55,54 +55,37 @@ for _, v in pairs(game:GetService("Players"):GetPlayers()) do
 end
  
 local c = 1 function zigzag(X)  return math.acos(math.cos(X * math.pi)) / math.pi end game:GetService("RunService").RenderStepped:Connect(function()  if game.Workspace.Camera:FindFirstChild('Arms') then   for i,v in pairs(game.Workspace.Camera.Arms:GetDescendants()) do    if v.ClassName == 'MeshPart' then      v.Color = Color3.fromHSV(zigzag(c),1,1)     c = c + .0001    end   end  end end)
-net = true -- 
-notify = false 
+
+--HITBOX EXPANDER
+local HeadSize = 10
+local IsDisabled = true
+local IsTeamCheckEnabled = false 
+
+game:GetService('RunService').RenderStepped:Connect(function()
+    if IsDisabled then
+        local localPlayer = game:GetService('Players').LocalPlayer
+        if not localPlayer then return end
+        
+        local localPlayerTeam = localPlayer.Team
+        
+        for _, player in ipairs(game:GetService('Players'):GetPlayers()) do
+            if player ~= localPlayer and (not IsTeamCheckEnabled or player.Team ~= localPlayerTeam) then
+                local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+                if humanoidRootPart then
+                    humanoidRootPart.Size = Vector3.new(HeadSize, HeadSize, HeadSize)
+                    humanoidRootPart.Transparency = 10
+                    humanoidRootPart.BrickColor = BrickColor.new("Really blue")
+                    humanoidRootPart.Material = Enum.Material.Neon
+                    humanoidRootPart.CanCollide = false
+                end
+            end
+        end
+    end
+end)
 
 
 
---[[
-if you execute the hitboxes will be bigger and invisble if you have problems with seeing it then re-execute the script.
-]]
-
-function getplrsname()
-for i,v in pairs(game:GetChildren()) do
-if v.ClassName == "Players" then
-return v.Name
-end
-end
-end
-local players = getplrsname()
-local plr = game[players].LocalPlayer
-coroutine.resume(coroutine.create(function()
-while  wait(1) do
-coroutine.resume(coroutine.create(function()
-for _,v in pairs(game[players]:GetPlayers()) do
-if v.Name ~= plr.Name and v.Character then
-v.Character.RightUpperLeg.CanCollide = false
-v.Character.RightUpperLeg.Transparency = 10
-v.Character.RightUpperLeg.Size = Vector3.new(13,13,13)
-
-v.Character.LeftUpperLeg.CanCollide = false
-v.Character.LeftUpperLeg.Transparency = 10
-v.Character.LeftUpperLeg.Size = Vector3.new(13,13,13)
-
-v.Character.HeadHB.CanCollide = false
-v.Character.HeadHB.Transparency = 10
-v.Character.HeadHB.Size = Vector3.new(13,13,13)
-
-v.Character.HumanoidRootPart.CanCollide = false
-v.Character.HumanoidRootPart.Transparency = 10
-v.Character.HumanoidRootPart.Size = Vector3.new(13,13,13)
-
-end
-end
-end))
-end
-end))
-
-
-
-
+--NOTIFICATION
 game.StarterGui:SetCore("SendNotification", {
     Title = "Dzk za uzywanie";
     Text = "Mojego skryptu!"; 
@@ -110,7 +93,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
 
 
-
+--SPEED
 
 _G.WS = "30"; 
                 local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
