@@ -47,6 +47,15 @@ doorsSection:NewButton("FFJ1 Doors", "Execute the FFJ1 script", function()
 end)
 
 
+--Jailbreak
+local jail = Window:NewTab("JailBreak")
+local jailSection = jail:NewSection("Scripts")
+
+jailSection:NewButton("Universal Farm", "Execute the Universal Farm script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular"))()
+end)
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
