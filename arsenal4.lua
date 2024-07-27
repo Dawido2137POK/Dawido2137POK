@@ -22,6 +22,26 @@ arsenalSection:NewButton("Solaris", "Execute Solaris script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/toasty-dev/pissblox/main/solaris_bootstrapper.lua",true))()
 end)
 
+
+
+--BladeBall
+local blade = Window:NewTab("BladeBall")
+local bladeSection = arse:NewSection("Scripts")
+
+bladeSection:NewButton("FFJ1 BladeBallV3", "Execute the FFJ1 script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
+end)
+
+
+bladeSection:NewButton("FFJ1 BladeBallV2", "Execute the FFJ1 script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+end)
+
+
+
+
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
@@ -78,4 +98,6 @@ local UISection = UI:NewSection("TOGGLE UI")
 UISection:NewKeybind("KEY", "set a key to toggle UI", Enum.KeyCode.L, function()
 	Library:ToggleUI()
 end)
+
+
 
