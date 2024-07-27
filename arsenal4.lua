@@ -12,9 +12,6 @@ end)
 
 
 
-1
-
-
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
