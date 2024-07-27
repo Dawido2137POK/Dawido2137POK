@@ -1,3 +1,56 @@
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+
+local function createHighlight(player)
+    if player == LocalPlayer then return end
+    
+    local highlight = Instance.new("Highlight")
+    highlight.Name = "PlayerHighlight"
+    highlight.FillColor = Color3.new(1, 0, 0)
+    highlight.FillTransparency = 0.5
+    highlight.OutlineTransparency = 1
+    highlight.Parent = player.Character
+end
+
+
+local function applyHighlights()
+    for _, player in pairs(Players:GetPlayers()) do
+        if player.Character then
+            createHighlight(player)
+        end
+    end
+end
+
+
+Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function()
+        createHighlight(player)
+    end)
+end)
+
+
+applyHighlights()
+
+
+Players.PlayerRemoving:Connect(function(player)
+    if player.Character then
+        if player.Character:FindFirstChild("PlayerHighlight") then
+            player.Character.PlayerHighlight:Destroy()
+        end
+    end
+end)
+
+
+
+
+
+
+
+
+
 local function API_Check()
     if Drawing == nil then
         return "No"
