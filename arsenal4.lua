@@ -43,5 +43,5 @@ end)
 local universalinfoSection = universals:NewSection("Info")
 
 
-universalinfoSection:NewLabel("LabelText")
+universalinfoSection:NewLabel("Created by xDawidx")
 
