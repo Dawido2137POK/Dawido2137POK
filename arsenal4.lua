@@ -55,7 +55,7 @@ universalskSection:NewButton("Infinite Jump", "Execute the Infinite Jump", funct
 end)
 
 universalskSection:NewButton("ESP", "Execute the ESP script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
+	pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
 end)
 
 --INFO
