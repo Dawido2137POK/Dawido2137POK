@@ -71,6 +71,18 @@ jailSection:NewButton("Chaos", "Execute the chaos script", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/xChaoticVoid/Jailbreak/main/Chaos.lua'), true))()
 end)
 
+
+
+--Rivals
+local rivals = Window:NewTab("Rivals")
+local rivalsSection = rivals:NewSection("Scripts")
+
+rivalsSection:NewButton("Silent", "Execute the Silent script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KxGOATESQUE/SilentRivals/main/SilentRivals"))()
+end)
+
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
