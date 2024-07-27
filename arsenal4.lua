@@ -43,7 +43,6 @@ end)
 local universalinfoSection = universals:NewSection("Info")
 
 
-universalinfoSection:NewTextBox("XD", "21321", function(txt)
-	print(txt)
+universalinfoSection:NewTextBox("XD", "21321", function()
 end)
 
