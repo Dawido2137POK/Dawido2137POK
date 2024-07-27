@@ -6,6 +6,6 @@ local Window = Library.CreateLib("Dawido2137POK", "DarkTheme")
 local arse = Window:NewTab("Arsenal")
 local arseSection = arse:NewSection("Owlhub")
 
-arseSection:NewButton("ButtonText", "ButtonInfo", function()
+arseSection:NewButton("test", "test", function()
     print("Clicked")
 end)
