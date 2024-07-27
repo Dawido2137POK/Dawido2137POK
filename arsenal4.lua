@@ -122,6 +122,9 @@ end)
 
 universalskSection:NewButton("Benchmark", "Execute the Benchmark script", function()
 	pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/benchmark.lua'))() end)
+	button:UpdateButton("New Text")
+	Wait(5)
+	button:UpdateButton("Benchmark")
 end)
 
 
