@@ -7,5 +7,5 @@ local arse = Window:NewTab("Arsenal")
 local owlSection = arse:NewSection("Owlhub")
 
 owlSection:NewButton("OwlHub", "Execute the owlhub script", function()
-    print("Clicked")
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"),true))()
 end)
