@@ -46,3 +46,6 @@ local infoSection = infor:NewSection("--------")
 
 infoSection:NewLabel("Created by xDawidx")
 
+
+infoSection:NewLabel("--------")
+
