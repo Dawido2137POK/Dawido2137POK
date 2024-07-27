@@ -9,3 +9,8 @@ local owlSection = arse:NewSection("Owlhub")
 owlSection:NewButton("OwlHub", "Execute the owlhub script", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"),true))()
 end)
+
+--UI TOOGLE
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
