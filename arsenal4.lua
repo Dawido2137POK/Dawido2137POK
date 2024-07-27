@@ -22,8 +22,8 @@ universalSection:NewSlider("Speed", "Select Your Speed", 100, 16, function(s) --
 end)
 
 universalSection:NewSlider("Jump Power", "Select Your Jump Power", 150, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    humanoid.UseJumpPower = true
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    humanoid.UseJumpPower = true
 end)
 
 
