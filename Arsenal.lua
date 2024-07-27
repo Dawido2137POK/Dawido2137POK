@@ -73,7 +73,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
                 local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
                 if humanoidRootPart then
                     humanoidRootPart.Size = Vector3.new(HeadSize, HeadSize, HeadSize)
-                    humanoidRootPart.Transparency = 0.7
+                    humanoidRootPart.Transparency = 0.8
                     humanoidRootPart.BrickColor = BrickColor.new("Really blue")
                     humanoidRootPart.Material = Enum.Material.Neon
                     humanoidRootPart.CanCollide = false
