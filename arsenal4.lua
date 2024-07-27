@@ -43,6 +43,5 @@ end)
 local universalinfoSection = universals:NewSection("Info")
 
 
-universalinfoSection:NewTextBox("XD", "21321", function()
-end)
+universalinfoSection:NewLabel("LabelText")
 
