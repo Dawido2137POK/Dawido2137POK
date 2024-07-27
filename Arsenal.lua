@@ -54,10 +54,10 @@ for _, v in pairs(game:GetService("Players"):GetPlayers()) do
     end
 end
  
-local c = 1 function zigzag(X)  return math.acos(math.cos(X * math.pi)) / math.pi end game:GetService("RunService").RenderStepped:Connect(function()  if game.Workspace.Camera:FindFirstChild('Arms') then   for i,v in pairs(game.Workspace.Camera.Arms:GetDescendants()) do    if v.ClassName == 'MeshPart' then      v.Color = Color3.fromHSV(zigzag(c),1,1)     c = c + .0001    end   end  end end)
+
 
 --HITBOX EXPANDER
-local HeadSize = 10
+local HeadSize = 15
 local IsDisabled = true
 local IsTeamCheckEnabled = false 
 
@@ -73,7 +73,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
                 local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
                 if humanoidRootPart then
                     humanoidRootPart.Size = Vector3.new(HeadSize, HeadSize, HeadSize)
-                    humanoidRootPart.Transparency = 10
+                    humanoidRootPart.Transparency = 0.7
                     humanoidRootPart.BrickColor = BrickColor.new("Really blue")
                     humanoidRootPart.Material = Enum.Material.Neon
                     humanoidRootPart.CanCollide = false
