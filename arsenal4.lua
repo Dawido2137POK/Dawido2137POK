@@ -56,6 +56,11 @@ jailSection:NewButton("Universal Farm", "Execute the Universal Farm script", fun
 end)
 
 
+jailSection:NewButton("Project Auto V4", "Execute the Project Auto script", function()
+    loadstring(game:HttpGet("https://scripts.projectauto.xyz/AutoRobV4"))()
+end)
+
+
 --UNIVERSAL
 local universals = Window:NewTab("Universal")
 local universalSection = universals:NewSection("Player")
