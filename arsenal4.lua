@@ -42,7 +42,7 @@ arsenalSection:NewButton("Thunder Client V2", "Execute Thunder Client script", f
 	    Url = string.format('https://raw.githubusercontent.com/%s/thunderclient/%s/main.lua', owner, branch),
 	    Method = 'GET'
 	}).Body)()
-
+end)
 
 --BladeBall
 local blade = Window:NewTab("BladeBall")
