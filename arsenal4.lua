@@ -67,26 +67,6 @@ doorsSection:NewButton("FFJ1 Doors", "Execute the FFJ1 script", function()
 end)
 
 
---Jailbreak
-local jail = Window:NewTab("JailBreak")
-local jailSection = jail:NewSection("Scripts")
-
-jailSection:NewButton("Universal Farm", "Execute the Universal Farm script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular"))()
-end)
-
-
-jailSection:NewButton("Project Auto V4", "Execute the Project Auto script", function()
-    loadstring(game:HttpGet("https://scripts.projectauto.xyz/AutoRobV4"))()
-end)
-
-
-
-jailSection:NewButton("Chaos", "Execute the chaos script", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/xChaoticVoid/Jailbreak/main/Chaos.lua'), true))()
-end)
-
-
 
 --Rivals
 local rivals = Window:NewTab("Rivals")
