@@ -32,15 +32,15 @@ end)
 
 arsenalSection:NewButton("Thunder Client V2", "Execute Thunder Client script", function()
 	if not game:IsLoaded() then
-	    game.Loaded:Wait()
+		game.Loaded:Wait()
 	end
 	
 	local owner = 'andrewdarkyyofficial'
 	local branch = 'main'
 	
 	loadstring(http.request({
-	    Url = string.format('https://raw.githubusercontent.com/%s/thunderclient/%s/main.lua', owner, branch),
-	    Method = 'GET'
+		Url = string.format('https://raw.githubusercontent.com/%s/thunderclient/%s/main.lua', owner, branch),
+		Method = 'GET'
 	}).Body)()
 end)
 
