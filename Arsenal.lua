@@ -4,6 +4,7 @@ _G.HeadSize = 25 _G.Disabled = true game:GetService('RunService').RenderStepped:
 
 --INF AMMO
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/inf%20ammo.lua"))()
 
 --INFJUMP
 
