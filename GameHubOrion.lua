@@ -30,7 +30,6 @@ local BladeBallTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-
 local DoorsTab = Window:MakeTab({
 	Name = "Doors",
 	Icon = "rbxassetid://4483345998",
@@ -130,6 +129,14 @@ ArseScriptSection:AddButton({
 	Name = "Thunder Client V2",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/ThunderClientV2Loader.lua"))()
+  	end    
+})
+
+
+ArseScriptSection:AddButton({
+	Name = "KowaHub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/kowahub.lua"))()
   	end    
 })
 
