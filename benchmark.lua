@@ -1,3 +1,9 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Check Console! (F9)";
+    Text = ""; 
+    Duration = 20;
+})
+
 
 local points = 0;
 local missing = {}
