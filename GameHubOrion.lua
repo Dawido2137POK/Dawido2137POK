@@ -30,6 +30,14 @@ local BladeBallTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+
+local MM2Tab = Window:MakeTab({
+	Name = "MM2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
 local DoorsTab = Window:MakeTab({
 	Name = "Doors",
 	Icon = "rbxassetid://4483345998",
@@ -92,6 +100,9 @@ local InfoSection = InfoTab:AddSection({
 	Name = "Information"
 })
 
+local MM2ScriptsSection = MM2Tab:AddSection({
+	Name = "Scripts"
+})
 
 --Buttons
 
@@ -158,6 +169,16 @@ BladeBallScriptSection:AddButton({
 	Name = "FFJ1 BladeBallV2",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/FFJ1LOADER.lua"))()
+  	end    
+})
+
+
+--MM2 Tab
+
+MM2ScriptsSection:AddButton({
+	Name = "Nexus",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/NexusMM2.lua"))()
   	end    
 })
 
