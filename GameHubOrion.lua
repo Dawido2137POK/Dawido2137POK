@@ -84,6 +84,10 @@ local UniversalScriptSection = UniversalTab:AddSection({
 	Name = "Scripts"
 })
 
+local UniversalUISection = UniversalTab:AddSection({
+	Name = "UI"
+})
+
 local InfoSection = InfoTab:AddSection({
 	Name = "Information"
 })
@@ -252,6 +256,14 @@ UniversalScriptSection:AddButton({
 	Name = "Executor Benchmark",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/benchmark.lua'))()
+  	end    
+})
+
+
+UniversalUISection:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+        OrionLib:Destroy()
   	end    
 })
 
