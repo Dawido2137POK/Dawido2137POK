@@ -157,7 +157,7 @@ ArseScriptSection:AddButton({
 
 
 ArseScriptSection:AddButton({
-	Name = "Troll Script",
+	Name = "Troll",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/ESPSPAM.lua"))()
   	end    
