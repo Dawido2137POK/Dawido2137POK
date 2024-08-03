@@ -64,12 +64,6 @@ UIS.InputBegan:connect(function(UserInput)
     end
 end)
 
-
---ESP
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspNamesWork.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspWorkArsenal.lua"))()
-
 --GUN MODS
 
 local replicationstorage = game.ReplicatedStorage
@@ -92,8 +86,10 @@ for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
    end
    if v.Name == "Crit" then
        v.Value = 20
-   end
+
+--ESP
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspNamesWork.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspWorkArsenal.lua"))()
+   end  
 end
-
-
-
