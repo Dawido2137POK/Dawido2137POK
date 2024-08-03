@@ -1,4 +1,11 @@
- 
+
+--Noify
+
+    print("----------------------")
+    print("Arsenal Script")
+    print("Loaded Script!")
+    print("----------------------")
+
 --HITBOX EXPANDER
 function getplrsname()
 for i,v in pairs(game:GetChildren()) do
@@ -36,7 +43,6 @@ end))
 end
 end))
 
-
 --INFJUMP
 
 local Player = game:GetService'Players'.LocalPlayer;
@@ -58,24 +64,14 @@ UIS.InputBegan:connect(function(UserInput)
     end
 end)
 
---NOTIFICATION
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "INJECTED!";
-    Text = ""; 
-    Duration = 30;
-})
-
 
 --ESP
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspNamesWork.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspWorkArsenal.lua"))()
 
-
-		
 --GUN MODS
-		
+
 local replicationstorage = game.ReplicatedStorage
  
 for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
