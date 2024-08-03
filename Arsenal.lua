@@ -92,3 +92,8 @@ for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
    end
 end
 
+
+--ESP
+
+
+
