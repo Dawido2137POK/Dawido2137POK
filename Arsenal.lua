@@ -36,10 +36,6 @@ end))
 end
 end))
 
---ESP
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspNamesWork.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspWorkArsenal.lua"))()
 
 --INFJUMP
 
@@ -70,6 +66,14 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 30;
 })
 
+
+--ESP
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspNamesWork.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspWorkArsenal.lua"))()
+
+
+		
 --GUN MODS
 		
 local replicationstorage = game.ReplicatedStorage
