@@ -82,18 +82,18 @@ for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
       v.Value = 0.1
    end
    if v.Name == "FireRate" then
-       v.Value = 0.05
+       v.Value = 0.02
    end
    if v.Name == "Crit" then
        v.Value = 20
-            end
+    end
         end
     end
+end
 end
 
 --ESP
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspNamesWork.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/EspWorkArsenal.lua"))()
-   end  
-end
+
