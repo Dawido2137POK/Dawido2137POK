@@ -1,4 +1,4 @@
---KEY SYSTEM
+--KEY SYSTEM 1/2
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local WindowKey = OrionLib:MakeWindow({Name = "GameHub - Key System", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
@@ -55,7 +55,7 @@ function MakeScriptHub()
     --Funtions
 
 
-    --Key System
+    --Key System Script
 
     OrionLib:MakeNotification({
         Name = "Correct Key!",
@@ -394,6 +394,7 @@ function MakeScriptHub()
 
     OrionLib:Init()
 end
+--KeySystem 2/2
 
 local KeyTab = WindowKey:MakeTab({
 	Name = "Get Key",
@@ -430,5 +431,3 @@ KeyTab:AddButton({
 			end
   	end    
 })
-
-
