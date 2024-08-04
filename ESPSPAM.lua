@@ -1,4 +1,4 @@
-while wait(0.5) do
+while wait(0.001) do
     for i, player in ipairs(game:GetService("Players"):GetPlayers()) do
         if player ~= game.Players.LocalPlayer then
             if player.Character and player.Character:FindFirstChild("Humanoid") then
