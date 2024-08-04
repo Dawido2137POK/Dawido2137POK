@@ -82,13 +82,11 @@ for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
       v.Value = 0.1
    end
    if v.Name == "FireRate" then
-       v.Value = 0.02
+       v.Value = 0.05
    end
    if v.Name == "Crit" then
        v.Value = 20
    end
-        end
-    end
 end
 
 --ESP
