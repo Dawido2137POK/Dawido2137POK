@@ -83,6 +83,8 @@ end)
        end
        if v.Name == "FireRate" then
            v.Value = 0.05
+       if v.Name == "Crit" then
+           v.Value = 20
        end
     end
     
