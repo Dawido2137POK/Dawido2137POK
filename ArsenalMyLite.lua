@@ -82,7 +82,7 @@ end)
           v.Value = 0.1
        end
        if v.Name == "FireRate" then
-           v.Value = 0.05
+           v.Value = 0.015
        end
     end
     
