@@ -117,11 +117,20 @@ ArseScriptSection:AddButton({
 
 
 ArseScriptSection:AddButton({
-	Name = "My Script",
+	Name = "My",
 	Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/Arsenal.lua'),true))()
   	end    
 })
+
+
+ArseScriptSection:AddButton({
+	Name = "My LITE",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/ArsenalMyLite.lua'),true))()
+  	end    
+})
+
 
 
 ArseScriptSection:AddButton({
