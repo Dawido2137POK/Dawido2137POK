@@ -86,6 +86,10 @@ for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
    end
    if v.Name == "Crit" then
        v.Value = 20
+            end
+        end
+    end
+end
 
 --ESP
 
