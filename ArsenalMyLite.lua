@@ -48,7 +48,7 @@ end))
 local Player = game:GetService'Players'.LocalPlayer;
 local UIS = game:GetService'UserInputService';
  
-_G.JumpHeight = 35;
+_G.JumpHeight = 20;
  
 function Action(Object, Function) if Object ~= nil then Function(Object); end end
  
