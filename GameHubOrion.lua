@@ -10,16 +10,6 @@ _G.KeyInput = "string"
 
 --Functions
 
-
-function CorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Correct Key!",
-        Content = "You Have Entered A Correct Key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
 function IncorrectKeyNotification()
     OrionLib:MakeNotification({
         Name = "Incorrect Key!",
