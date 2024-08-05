@@ -370,6 +370,14 @@ function MakeScriptHub()
     })
 
 
+    UniversalScriptSection:AddButton({
+        Name = "Executor Benchmark UNC",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Dawido2137POK/Dawido2137POK/main/BenchMarkUNC.lua'))()
+        end    
+    })
+
+
     UniversalUISection:AddButton({
         Name = "Destroy UI",
         Callback = function()
