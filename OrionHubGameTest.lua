@@ -15,26 +15,6 @@ _G.KeyInputPremium = "string"
 
 --Functions
 
-function IncorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Incorrect Key!",
-        Content = "You Have Entered A Incorrect Key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-function Clickboard()
-    OrionLib:MakeNotification({
-        Name = "Information",
-        Content = "Check Your ClipBoard!",
-        Image = "rbxassetid://4483345998",
-        Time = 8
-    })
-end
-
-
-
 function MakeScriptHub()
     OrionLib:Destroy()
     --Script HUB
@@ -109,7 +89,6 @@ KeyTab:AddButton({
 	Callback = function()
             setclipboard("https://discord.gg/MfhM829HpE")
             toclipboard("https://discord.gg/MfhM829HpE")
-            Clickboard()
 			end   
 })
 
@@ -132,8 +111,5 @@ KeyTab:AddButton({
 
 		else if _G.KeyInputPremium == _G.KeyPremium then
 			MakePremiumScriptHub()
-            	else
-                	IncorrectKeyNotification()
-				end
   	end    
 })
