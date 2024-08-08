@@ -550,9 +550,10 @@ KeyTab:AddButton({
 			MakeScriptHub()
 
 			else if _G.KeyInputPremium == _G.KeyPremium then
-				MakePremiumScriptHub()
+			MakePremiumScriptHub()
             else
                 IncorrectKeyNotification()
+				
 			end
   	end    
 })
