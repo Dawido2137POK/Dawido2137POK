@@ -16,64 +16,11 @@ _G.KeyInputPremium = "string"
 --Functions
 
 function MakeScriptHub()
-    OrionLib:Destroy()
-    --Script HUB
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
-    --Window
-    local Window = OrionLib:MakeWindow({Name = "GameHub - Orion", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
-
-    --Values
-
-
-    --Funtions
-
-
-    --Key System Script
-
-    OrionLib:MakeNotification({
-        Name = "Correct Key!",
-        Content = "You Have Entered A Correct Key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-
-    --Tabs
-	
-    OrionLib:Init()
-end
 
 --MakePremiumScriptHub
 
-function MakePremiumScriptHub()
-    OrionLib:Destroy()
-    --Script HUB
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
-    --Window
-    local Window = OrionLib:MakeWindow({Name = "GameHub - Orion", HidePremium = true, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
-
-    --Values
-
-
-    --Funtions
-
-
-    --Key System Script
-
-    OrionLib:MakeNotification({
-        Name = "Correct Key!",
-        Content = "You Have Entered A Correct Key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-
-    --Tabs
-
-    OrionLib:Init()
-end
 
 
 --KeySystem 2/2
