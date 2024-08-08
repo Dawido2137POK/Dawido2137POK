@@ -56,7 +56,7 @@ KeyTab:AddButton({
       		if _G.KeyInput == _G.Key then
 			MakeScriptHub()
 
-		else if _G.KeyInputPremium == _G.KeyPremium then
+			else if _G.KeyInputPremium == _G.KeyPremium then
 			MakePremiumScriptHub()
   	end    
 })
