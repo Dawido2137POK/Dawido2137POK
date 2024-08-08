@@ -22,7 +22,10 @@ end
 
 --MakePremiumScriptHub
 
-
+function MakePremiumScriptHub()
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	local WindowKey = OrionLib:MakeWindow({Name = "GameHub - Key System", HidePremium = true, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
+end
 
 
 --KeySystem 2/2
