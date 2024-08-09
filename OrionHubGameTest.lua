@@ -429,3 +429,13 @@ KeyTab:AddButton({
 			end
   	end    
 })
+
+
+KeyTab:AddButton({
+	Name = "Premium Key System",
+	Callback = function()
+      		if _G.KeyInput == _G.Key then
+			MakePKey()
+			end
+  	end    
+})
