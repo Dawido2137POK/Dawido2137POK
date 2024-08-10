@@ -14,53 +14,63 @@ function Keysysf()
     --KEY SYSTEM 1/2
 
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-    local WindowKey = OrionLib:MakeWindow({Name = "GameHub - Key System", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
+    local WindowKeysysf = OrionLib:MakeWindow({Name = "GameHub - Key System", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
 
     --Values
 
-    getgenv().Key = "xDawidx-Key0038974659"
-    getgenv().KeyInput = "string"
+    getgenv().Keysys = "xDawidx-Key0038974659"
+    getgenv().KeyInputsys = "string"
 
     --KeySystem 2/2
 
-    local KeyTab = WindowKey:MakeTab({
+    local KeyTabsysf = WindowKeysysf:MakeTab({
         Name = "Get Key",
         Icon = "rbxassetid://6023426915",
         PremiumOnly = false
     })
 
-    KeyTab:AddButton({
+    KeyTabsysf:AddButton({
         Name = "Get Key",
         Callback = function()
                 setclipboard("https://discord.gg/MfhM829HpE")
                 toclipboard("https://discord.gg/MfhM829HpE")
-                Clickboard()
+                OrionLib:MakeNotification({
+                    Name = "Information",
+                    Content = "Check Your ClipBoard!",
+                    Image = "rbxassetid://4483345998",
+                    Time = 8
+                })
                 end   
     })
 
 
-    KeyTab:AddTextbox({
+    KeyTabsysf:AddTextbox({
         Name = "Enter Key",
         Default = "",
         TextDisappear = true,
         Callback = function(Value)
-            KeyInput = Value
+            KeyInputsys = Value
         end	  
     })
 
-    KeyTab:AddButton({
+    KeyTabsysf:AddButton({
         Name = "Check Key",
         Callback = function()
-                if KeyInput == Key then
+                if KeyInputsys == Keysys then
                 MakeScriptHub()
                 else
-                    IncorrectKeyNotification()
+                    OrionLib:MakeNotification({
+                        Name = "Incorrect Key!",
+                        Content = "You Have Entered A Incorrect Key!",
+                        Image = "rbxassetid://4483345998",
+                        Time = 5
+                    })
                 end
         end    
     })
 
 
-    KeyTab:AddButton({
+    KeyTabsysf:AddButton({
         Name = "Premium Key System",
         Callback = function()
                 MakePKey()
