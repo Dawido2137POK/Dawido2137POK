@@ -103,7 +103,7 @@ end
 function MakePKey()
     --KEY SYSTEM 1/2
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
     local WindowKey2 = OrionLib:MakeWindow({Name = "GameHub - Key System (P Keys)", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-OrionP"})
 
     --Values
@@ -174,7 +174,7 @@ function MakeScriptHub()
     OrionLib:Destroy()
     --Script HUB
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 
     --Window
     local Window = OrionLib:MakeWindow({Name = "GameHub - Orion", HidePremium = true, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
@@ -540,7 +540,7 @@ function MakePScriptHub()
     OrionLib:Destroy()
     --Script HUB
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 
     --Window
     local WindowPscriptHub = OrionLib:MakeWindow({Name = "GameHub - Orion (P)", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
