@@ -24,7 +24,7 @@ end
 function MakeScriptHub()
     OrionLib:Destroy()
     --Script HUB
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
     --Window
     local Window = OrionLib:MakeWindow({Name = "GameHub - Orion", HidePremium = false, IntroEnabled = false, IntroText = "Game Hub", SaveConfig = true, ConfigFolder = "GameHub-Orion"})
     --Values
